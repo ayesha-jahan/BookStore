@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="/tailwind.css" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <title>NOROZO</title>
+</head>
+<body>
+    <header class="text-gray-600 body-font">
+      <link rel="stylesheet" href="styles.css">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+            <div class="navbar">
+            
+              <a href="#home"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+              </svg>Home</a>
+               <div class="dropdown">
+                <button class="dropbtn"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                  </svg>Profile
+                   <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Login</a>
+                  <a href="#">Address</a>
+                  <a href="#">Orders</a>
+                </div>
+                </div>
+                <a href="#favourites"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                  </svg>Favourites</a>
+                <a href="#coupon"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z" clip-rule="evenodd" />
+                    <path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z" />
+                  </svg>Coupons</a>
+
+                <div class="dropdown">
+                  <button class="dropbtn"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                  </svg>Help
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">Help Centre</a>
+                    <a href="#">Report an issue</a>
+                   </div>
+                  </div>
+
+                <div class="dropdown">
+                  <button class="dropbtn"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.078-2.183l1.562-1.562C15.802 8.249 16 9.1 16 10zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 16a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027zm-4.677-2.796a4.002 4.002 0 01-.041-2.08l-.08.08-1.53-1.533A5.98 5.98 0 004 10c0 .954.223 1.856.619 2.657l1.54-1.54zm1.088-6.45A5.974 5.974 0 0110 4c.954 0 1.856.223 2.657.619l-1.54 1.54a4.002 4.002 0 00-2.346.033L7.246 4.668zM12 10a2 2 0 11-4 0 2 2 0 014 0z" clip-rule="evenodd" />
+                  </svg>About Us
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">Share App</a>
+                    <a href="#">Rate App</a>
+                   </div> 
+                  </div>
+
+              </div>
+            
+          </nav>
+          <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+            <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQHCx_Pey9TDog/company-logo_200_200/0/1619863934263?e=2159024400&v=beta&t=dn_mS6WzriDo-W7606E2k89WsZ5rdaZruJzG5-Ffze4" width="150"  height="80"> 
+            <span class="ml-3 text-xl"></span>
+          </a>
+          <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+            <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+                <a href="#cart"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                  </svg>Cart</a>
+            </button>
+          </div>
+        </div>
+      </header>
+</body>
+
+
+
+          <br>
+
+          
+        
+          
+          
+
+
+
+
+        <!-- Required form plugin -->
+<link
+href="https://cdn.jsdelivr.net/npm/@tailwindcss/custom-forms@0.2.1/dist/custom-forms.css"
+rel="stylesheet"
+/>
+<!-- Required font awesome -->
+<link
+rel="stylesheet"
+href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+/>
+
+<!-- Small -->
+<div class="relative flex w-full flex-wrap items-stretch mb-3">
+<span
+  class="
+    z-10
+    h-full
+    leading-snug
+    font-normal
+    absolute
+    text-center text-gray-400
+    absolute
+    bg-transparent
+    rounded
+    text-base
+    items-center
+    justify-center
+    w-8
+    pl-2
+    py-1
+  "
+>
+  <i class="fas fa-search"></i>
+</span>
+<input
+  type="text"
+  placeholder="Search product"
+  class="
+    px-2
+    py-1
+    placeholder-gray-400
+    text-gray-600
+    relative
+    bg-white bg-white
+    rounded
+    text-sm
+    border border-gray-400
+    outline-none
+    focus:outline-none focus:ring
+    w-full
+    pl-10
+  "
+/>
+</div>
+<br>
+
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+  />
+  <link
+    href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+  <!-- Swiper's CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+</head>
+
+<body>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+          
+        <img
+          class="object-cover w-full h-96"
+          src="https://source.unsplash.com/user/erondu/3000x900"
+          alt="image"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          class="object-cover w-full h-96"
+          src="https://source.unsplash.com/collection/190727/3000x900"
+          alt="image"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          class="object-cover w-full h-96"
+          src="https://source.unsplash.com/collection/190728/3000x900"
+          alt="image"
+        />
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+</body>
+
+
+
+
+<section class="text-gray-600 body-font">
+          
+  <div class="container px-5 py-24 mx-auto">
+
+<button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+  Class IX
+</button>
+<button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+  Class X
+</button>
+<button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+ Class XI
+</button>
+<button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+  Class XII
+</button>
+<button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+  Class 1-8
+</button>
+<button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+  IIT-JEE
+</button>
+<button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+  NEET
+</button>
+<button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+  ICSE
+</button>
+<button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+  GOV
+</button>
+<button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+  ENGG
+</button>
+</div>
+</section>
+         
+
+
+
+
+<section class="text-gray-600 body-font">
+          
+  <div class="container px-5 py-24 mx-auto">
+  
+    <h1 class="text-gray-4000 title-font text-lg font-medium">Novels For You</h1>
+    
+<button type = "button" name = "Novel" value = "myimage"> 
+  <img src="https://www.powells.com/portals/0/Images/800-we-read-romance.jpg" width="300"  height="300"> 
+</button>
+<button type = "button" name = "Novel" value = "myimage"> 
+  <img src="https://www.infobooks.org/wp-content/uploads/2020/12/Mystery-and-Thriller-Books.jpg" width="300"  height="300"> 
+</button>
+<button type = "button" name = "Novel" value = "myimage"> 
+  <img src="https://miblart.com/wp-content/uploads/2020/09/qqqq.png" width="300"  height="1000"> 
+</button>
+<button type = "button" name = "Novel" value = "myimage"> 
+  <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX1524501.jpg" width="300"  height="200"> 
+</button>
+<button type = "button" name = "Novel" value = "myimage"> 
+  <img src="https://marketxls.com/wp-content/uploads/2021/04/Option-Trading-Strategies.jpg" width="200"  height="200"> 
+</button>
+
+<div>
+</section>
+
+
+
+          <section class="text-gray-600 body-font">
+          
+            <div class="container px-5 py-24 mx-auto">
+              <h1 class="text-gray-4000 title-font text-lg font-medium">Featured Novels</h1>
+              <br>
+              
+              <div class="flex flex-wrap -m-4">
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/420x260/?novel">
+                    </button>
+                  </a>
+                  
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
+                    <p class="mt-1">$16.00</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/421x261/?novel">
+                    </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
+                    <p class="mt-1">$21.15</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/422x262/?novel">
+                    </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
+                    <p class="mt-1">$12.00</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/423x263/?novel">
+                    </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
+                    <p class="mt-1">$18.40</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/424x264/?novel">
+                    </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
+                    <p class="mt-1">$16.00</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/425x265/?novel">
+                      </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
+                    <p class="mt-1">$21.15</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/427x267/?novel">
+                    </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
+                    <p class="mt-1">$12.00</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?novel">
+                    </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
+                    <p class="mt-1">$18.40</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <br>
+
+          <section class="text-gray-600 body-font">
+          
+            <div class="container px-5 py-24 mx-auto">
+              <h1 class="text-gray-4000 title-font text-lg font-medium">Term 1 Exams 2021</h1>
+              <br>
+              
+              <div class="flex flex-wrap -m-4">
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/420x260/?novel">
+                    </button>
+                  </a>
+                  
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
+                    <p class="mt-1">$16.00</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/421x261/?novel">
+                    </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
+                    <p class="mt-1">$21.15</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/422x262/?novel">
+                    </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
+                    <p class="mt-1">$12.00</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/423x263/?novel">
+                    </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
+                    <p class="mt-1">$18.40</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/424x264/?novel">
+                    </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
+                    <p class="mt-1">$16.00</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/425x265/?novel">
+                      </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
+                    <p class="mt-1">$21.15</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/427x267/?novel">
+                    </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
+                    <p class="mt-1">$12.00</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?novel">
+                    </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
+                    <p class="mt-1">$18.40</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <br>
+
+          <section class="text-gray-600 body-font">
+          
+            <div class="container px-5 py-24 mx-auto">
+              <h1 class="text-gray-4000 title-font text-lg font-medium">ISC Board Best Picks</h1>
+              <br>
+              
+              <div class="flex flex-wrap -m-4">
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/420x260/?novel">
+                    </button>
+                  </a>
+                  
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
+                    <p class="mt-1">$16.00</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/421x261/?novel">
+                    </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
+                    <p class="mt-1">$21.15</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/422x262/?novel">
+                    </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
+                    <p class="mt-1">$12.00</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/423x263/?novel">
+                    </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
+                    <p class="mt-1">$18.40</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/424x264/?novel">
+                    </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
+                    <p class="mt-1">$16.00</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/425x265/?novel">
+                      </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
+                    <p class="mt-1">$21.15</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/427x267/?novel">
+                    </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
+                    <p class="mt-1">$12.00</p>
+                  </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                  <a class="block relative h-48 rounded overflow-hidden">
+                    <button>
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?novel">
+                    </button>
+                  </a>
+                  <div class="mt-4">
+                    <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+                    <h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
+                    <p class="mt-1">$18.40</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          
+
+
+
+    </body>
+    </html>
